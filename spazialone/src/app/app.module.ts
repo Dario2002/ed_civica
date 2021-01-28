@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { GoogleChartsModule } from 'angular-google-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,11 +12,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   declarations: [
     AppComponent,
     PaginaComponent,
-    GraficiComponent
+    GraficiComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    GoogleChartsModule,
     NgbModule
   ],
   providers: [],
