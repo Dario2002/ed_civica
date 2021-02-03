@@ -5,7 +5,7 @@ import { GoogleChartsModule } from 'angular-google-charts';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PaginaComponent } from './pagina/pagina.component';
-import { GraficiComponent } from './grafici/grafici.component';
+import { GraficiComponent,  } from './grafici/grafici.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -22,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     GoogleChartsModule,
     NgbModule,
     HttpClientModule
+
 
   ],
   providers: [],

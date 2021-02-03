@@ -5,7 +5,7 @@ import { PaginaComponent } from './pagina/pagina.component';
 
 const routes: Routes = [
   { path: 'search', component: PaginaComponent },
-  { path: 'items/:id', component: GraficiComponent },
+  { path: 'grafici', component: GraficiComponent },
   { path: '',   redirectTo: '/search', pathMatch: 'full' }
 ];
 

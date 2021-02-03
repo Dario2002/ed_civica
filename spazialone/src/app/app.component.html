@@ -1,8 +1,17 @@
-<app-pagina> </app-pagina>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Infrastrutture</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#" [routerLink] = "['/grafici']" >Grafici</a></li>
+    </ul>
+  </div>
+</nav>
 
-<div *ngFor="let graph of chartDataArray">
-  <google-chart [title]="graph.title" [type]="graph.type" [data]="graph.data">
-  </google-chart>
-</div>
 
-<app-grafici> </app-grafici>
+
+<router-outlet></router-outlet>
+
+<!--<app-grafici> </app-grafici>-->

@@ -1,6 +1,10 @@
-<p>grafici works!</p>
-<!--<google-chart [title]="rural_population.title" [type]="chart.type" [data]="chart.data" [columns]="chart.columnNames" [options]="chart.options"> </google-chart>-->
+<p></p>
+<!--<google-chart [title]="rural_population.title" [type]="chart.type" [data]="chart.data" [columns]="chart.columnNames" [options]="chart.options"> </google-chart>
 
 
-<google-chart [type]="type" [data]="myData"></google-chart>
+<google-chart [type]="type" [data]="myData"></google-chart> -->
 
+<div *ngFor="let graph of chartDataArray">
+  <google-chart [title]="graph.title" [type]="graph.type" [data]="graph.data">
+  </google-chart>
+</div>
