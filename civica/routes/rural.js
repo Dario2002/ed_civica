@@ -21,6 +21,19 @@ router.get('/', function (req, res, next) {
     });
 });
 
+router.get('/stato/:cn', function (req, res, next) {
+    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+    let stato = rec.parameters.cn;
+    client.connect(err => {
+        const collection = client.db("educazione_civica1").collection("access_to_rural_population");
+        collection.find({}).toArray((err, result) => {
+            if (err) console.log(err.message);
+            else { res.send(result); console.log(result); }
+            client.close();
+        });
+    });
+});
+
 router.get('/rural_on_total', function (req, res, next) {
     const uri = "mongodb+srv://dbanfi:dbanfi@cluster0.wbjdm.mongodb.net/dbname?retryWrites=true&w=majority"
     /*const uri = "mongodb+srv://dbanfi:dbanfi@cluster0.wbjdm.mongodb.net/test"*/

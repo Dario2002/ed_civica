@@ -11,7 +11,7 @@ export class GraficiComponent implements OnInit {
   chartDataArray = new Array<ChartData>();
 
   constructor(public http: HttpClient) {
-  http.get('https://3001-dfa3aa8e-5ce6-4494-b6cb-c6a80ccd2e1c.ws-eu03.gitpod.io/rurale').subscribe(this.getData);
+  http.get('https://3001-e215c16f-191c-4075-9345-06866d7e9cae.ws-eu03.gitpod.io/rurale').subscribe(this.getData);
   //this.getData(fakeData.data);
   }
   ngOnInit(): void {
